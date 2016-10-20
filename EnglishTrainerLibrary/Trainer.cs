@@ -10,11 +10,9 @@ namespace EnglishTrainerLibrary
     {
         public string EngWord;
         public string RusWord;
-        public Training(string engWord, string rusWord)
+        public Training()
         {
-            EngWord = engWord;
-            RusWord = rusWord; 
-
+            
         }
     }
 }

@@ -10,7 +10,6 @@ namespace EnglishTrainerLibrary
     {
         public string Word { get; private set;}
         public int Id { get; private set; }
-      //  public int maxId = 1;
         public Words(string word, int id)
         {
             Word = word;

@@ -1,0 +1,7 @@
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\obj\Debug\EnglishTrainerLibrary.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\bin\Debug\EnglishTrainerLibrary.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\bin\Debug\EnglishTrainerLibrary.pdb
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\obj\Debug\EnglishTrainerLibrary.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerLibrary\obj\Debug\EnglishTrainerLibrary.pdb

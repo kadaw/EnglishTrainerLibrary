@@ -17,5 +17,6 @@ namespace EnglishTrainerLibrary
         public List<string> StudiedWords;
         public int Id { get; private set; }
         public string Name { get; private set; }
+
     }
 }

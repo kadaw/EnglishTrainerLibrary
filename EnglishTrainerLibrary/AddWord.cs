@@ -19,12 +19,8 @@ namespace EnglishTrainerLibrary
         }
                 private int GetNewId()
         {
-          
-            // maxId++;//Добавить файл с максимальным айди 
-          var maxId = engWords.Count + 1;
-                      
-
-            return maxId;
+                    var maxId = engWords.Count + 1;
+                    return maxId;
         }
 
     }

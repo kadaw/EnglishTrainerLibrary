@@ -1,12 +1,62 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace EnglishTrainerLibrary
 {
-    class FileSystem
+   public class FileSystem
     {
+       public int count;
+        public FileSystem(string path)
+        {
+            string storage = File.ReadAllText(path);
+            List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
+        }
+        public void LoadedUsers(string path, List<UserProfile> Users)
+        {
+            string storage = File.ReadAllText(path);
+            List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
+
+            for (int i = 0; i < listOfUsers.Count; i++)
+            {
+                Users.Add(listOfUsers[i]);
+            }
+        }
+        public void LoadedEngWords(string path, List<Words> engWords)
+        {
+            StreamReader streamReader = new StreamReader(path);
+            string engWord = "";
+            string str = "";
+            while (!streamReader.EndOfStream)
+            {
+                str = streamReader.ReadLine();
+                engWord = str.Substring(0, str.IndexOf("!"));
+                var id = engWords.Count + 1;
+                engWords.Add(new Words(engWord, id));
+
+            }
+        }
+        public void LoadedRusWords(string path, List<Words> rusWords)
+        {
+            StreamReader streamReader = new StreamReader(path);
+            string rusWord = "";
+            string str = "";
+            while (!streamReader.EndOfStream)
+            {
+                str = streamReader.ReadLine();
+                rusWord = str.Substring(0, str.IndexOf("!"));
+                var id = rusWords.Count + 1;
+                rusWords.Add(new Words(rusWord, id));
+
+            }
+        }
+
+
+
+
     }
 }
