@@ -8,7 +8,7 @@ namespace EnglishTrainerLibrary
 {
     public interface IFileSystem
     {
-        void LoadedUsers(string path, List<UserProfile> Users);
+        void LoadUsers(string path, List<UserProfile> Users);
         void LoadedEngWords(string path, List<Words> engWords);
         void LoadedRusWords(string path, List<Words> rusWords);
 

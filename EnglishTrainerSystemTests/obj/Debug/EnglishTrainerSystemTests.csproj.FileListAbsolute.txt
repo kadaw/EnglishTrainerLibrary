@@ -1,0 +1,11 @@
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\EnglishTrainerSystemTests.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\EnglishTrainerSystemTests.pdb
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\EnglishTrainerLibrary.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\Newtonsoft.Json.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\EnglishTrainerLibrary.pdb
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\Newtonsoft.Json.xml
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\bin\Debug\ru\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\obj\Debug\EnglishTrainerSystemTests.csprojResolveAssemblyReference.cache
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\obj\Debug\EnglishTrainerSystemTests.dll
+C:\Users\User\documents\visual studio 2015\Projects\EnglishTrainerLibrary\EnglishTrainerSystemTests\obj\Debug\EnglishTrainerSystemTests.pdb

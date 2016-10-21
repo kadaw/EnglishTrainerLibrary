@@ -45,10 +45,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddUser.cs" />
-    <Compile Include="AddWord.cs" />
     <Compile Include="FileSystem.cs" />
     <Compile Include="IFileSystem.cs" />
-    <Compile Include="IUserRegistration.cs" />
+    <Compile Include="Test.cs" />
     <Compile Include="Trainer.cs" />
     <Compile Include="UserProfile.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

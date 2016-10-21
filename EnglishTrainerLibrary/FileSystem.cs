@@ -11,12 +11,13 @@ namespace EnglishTrainerLibrary
    public class FileSystem
     {
        public int count;
+        private UserProfile ThisUser;
         public FileSystem(string path)
         {
             string storage = File.ReadAllText(path);
             List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
         }
-        public void LoadedUsers(string path, List<UserProfile> Users)
+        public void LoadUsers(string path, List<UserProfile> Users)
         {
             string storage = File.ReadAllText(path);
             List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
@@ -53,6 +54,15 @@ namespace EnglishTrainerLibrary
                 rusWords.Add(new Words(rusWord, id));
 
             }
+        }
+        public void Registrtion(string path, string name)
+        {
+            string storage = File.ReadAllText(path);
+            List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
+            var id = listOfUsers.Count+1;
+            listOfUsers.Add(new UserProfile(id, name));
+
+
         }
 
 
