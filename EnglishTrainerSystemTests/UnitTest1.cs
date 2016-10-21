@@ -25,7 +25,9 @@ namespace EnglishTrainerLibrary
             List<Words> randWords = new List<Words>();
             Training TestTraining = new Training("UsersProfiles.txt");
             randWords = TestTraining.ReturnRandWords("BaseOfEngWords.txt", "BaseOfRusWords.txt");
-            Assert.AreEqual(randWords[0], randWords[1]); }
+            Assert.AreEqual(randWords[0], randWords[1]);
+        }
+
         [TestMethod]
         public void CheckAnswerTest()
         {

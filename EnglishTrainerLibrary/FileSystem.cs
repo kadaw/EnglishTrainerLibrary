@@ -61,8 +61,17 @@ namespace EnglishTrainerLibrary
             List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
             var id = listOfUsers.Count+1;
             listOfUsers.Add(new UserProfile(id, name));
+            ThisUser = listOfUsers[id];
+        }
+        public void Identification(string path, int id)
+        {
+            string storage = File.ReadAllText(path);
+            List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
 
-
+            if (id < listOfUsers.Count)
+            {
+                ThisUser = listOfUsers[id];
+            }
         }
 
 
