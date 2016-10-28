@@ -10,30 +10,46 @@ namespace EnglishTrainerLibrary
     {
        
         public bool rightAnswer;
+        Words randEngWord;
+        public int randWordId;
+        FileSystem fileSystem = new FileSystem("UsersProfiles.txt");
         public Training(string pathForEngFileSystem)
         {
             FileSystem fileSystem = new FileSystem("UsersProfiles.txt");
+            List<Words> randWords = ReturnRandWords("BaseOfEngWords.txt", "BaseOfRusWords.txt");
+
        
         }
         public List<Words> ReturnRandWords(string pathForEngWords, string pathForRusWords)
         {
-            FileSystem fileSystem = new FileSystem("UsersProfiles.txt");
+            
             List<Words> engWords = new List<Words>();
             List<Words> rusWords = new List<Words>();
+            List<Words> randWords = new List<Words>();
             //  pathForEngWords = "BaseOfEngWords.txt";//убрать в финальной версии
             //  pathForRusWords = "BaseOfRusWords.txt";//убрать в финальной версии
             fileSystem.LoadedEngWords(pathForEngWords, engWords);
             fileSystem.LoadedRusWords(pathForRusWords, rusWords);
-            Words randEngWord = engWords[new Random().Next(0, engWords.Count - 1)];
+            repeat:
+            randEngWord = engWords[new Random().Next(0, engWords.Count - 1)];
             Words randRusWord = rusWords[new Random().Next(0, rusWords.Count - 1)];
-            if (randEngWord.Equals(randRusWord))
+            for (int i = 0; i < fileSystem.ThisUser.StudiedWords.Count+1; i++)
             {
-                rightAnswer = true;
+                if (randEngWord.Equals(fileSystem.ThisUser.StudiedWords[i]))
+                {
+                    if (randEngWord.Equals(randRusWord))
+                    {
+                        rightAnswer = true;
+                    }
+                    else rightAnswer = false;
+                    randWords.Add(randEngWord);
+                    randWords.Add(randRusWord);
+                }
+                else
+                {
+                    goto repeat;
+                }
             }
-            else rightAnswer = false;
-            List<Words> randWords = new List<Words>();
-            randWords.Add(randEngWord);
-            randWords.Add(randRusWord);
             return randWords;
         }
 
@@ -42,6 +58,7 @@ namespace EnglishTrainerLibrary
         {
             if (answer==rightAnswer)
             {
+                fileSystem.ThisUser.StudiedWords.Add(randEngWord);
                 return true;
             }
             else

@@ -12,9 +12,9 @@ namespace EnglishTrainerLibrary
         {
             Id = id;
             Name = name;
-            StudiedWords = new List<string>();
+            StudiedWords = new List<Words>();
         }
-        public List<string> StudiedWords;
+        public List<Words> StudiedWords;
         public int Id { get; private set; }
         public string Name { get; private set; }
 

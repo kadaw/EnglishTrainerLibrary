@@ -11,7 +11,7 @@ namespace EnglishTrainerLibrary
    public class FileSystem
     {
        public int count;
-        private UserProfile ThisUser;
+        public UserProfile ThisUser;
         public FileSystem(string path)
         {
             string storage = File.ReadAllText(path);
@@ -67,7 +67,6 @@ namespace EnglishTrainerLibrary
         {
             string storage = File.ReadAllText(path);
             List<UserProfile> listOfUsers = JsonConvert.DeserializeObject<List<UserProfile>>(storage);
-
             if (id < listOfUsers.Count)
             {
                 ThisUser = listOfUsers[id];

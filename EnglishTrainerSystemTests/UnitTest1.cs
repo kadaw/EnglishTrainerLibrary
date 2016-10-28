@@ -37,5 +37,18 @@ namespace EnglishTrainerLibrary
             var rightEqual = true;
             Assert.AreEqual(rightEqual, equal);
         }
+        [TestMethod]
+        public void Testik()
+        {
+            Training TestTraining = new Training("UsersProfiles.txt");
+            FileSystem fileSystem = new FileSystem("UsersProfiles.txt");
+            List<Words> randWords = new List<Words>();
+            fileSystem.ThisUser.StudiedWords = new List<Words> {};
+            randWords = TestTraining.ReturnRandWords("BaseOfEngWords.txt", "BaseOfRusWords.txt");
+            int i = 0;
+            Assert.AreEqual(randWords[0].Id, i);
+            
+
+        }
     }
 }
